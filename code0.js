@@ -1,45 +1,29 @@
-gdjs.duckpondCode = {};
-gdjs.duckpondCode.localVariables = [];
-gdjs.duckpondCode.GDduck1Objects1= [];
-gdjs.duckpondCode.GDduck1Objects2= [];
-gdjs.duckpondCode.GDbread1Objects1= [];
-gdjs.duckpondCode.GDbread1Objects2= [];
-gdjs.duckpondCode.GDduckangleObjects1= [];
-gdjs.duckpondCode.GDduckangleObjects2= [];
+gdjs.homepageCode = {};
+gdjs.homepageCode.localVariables = [];
+gdjs.homepageCode.GDgotopondObjects1= [];
+gdjs.homepageCode.GDgotopondObjects2= [];
+gdjs.homepageCode.GDgotoshopObjects1= [];
+gdjs.homepageCode.GDgotoshopObjects2= [];
 
 
-gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects = Hashtable.newFrom({"bread1": gdjs.duckpondCode.GDbread1Objects1});
-gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDduck1Objects1Objects = Hashtable.newFrom({"duck1": gdjs.duckpondCode.GDduck1Objects1});
-gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects = Hashtable.newFrom({"bread1": gdjs.duckpondCode.GDbread1Objects1});
-gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDduck1Objects1Objects = Hashtable.newFrom({"duck1": gdjs.duckpondCode.GDduck1Objects1});
-gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects = Hashtable.newFrom({"bread1": gdjs.duckpondCode.GDbread1Objects1});
-gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects = Hashtable.newFrom({"bread1": gdjs.duckpondCode.GDbread1Objects1});
-gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDduck1Objects1Objects = Hashtable.newFrom({"duck1": gdjs.duckpondCode.GDduck1Objects1});
-gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects = Hashtable.newFrom({"bread1": gdjs.duckpondCode.GDbread1Objects1});
-gdjs.duckpondCode.eventsList0 = function(runtimeScene) {
+gdjs.homepageCode.eventsList0 = function(runtimeScene) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("gotopond"), gdjs.homepageCode.GDgotopondObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+for (var i = 0, k = 0, l = gdjs.homepageCode.GDgotopondObjects1.length;i<l;++i) {
+    if ( gdjs.homepageCode.GDgotopondObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.homepageCode.GDgotopondObjects1[k] = gdjs.homepageCode.GDgotopondObjects1[i];
+        ++k;
+    }
+}
+gdjs.homepageCode.GDgotopondObjects1.length = k;
 if (isConditionTrue_0) {
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("bread1"), gdjs.duckpondCode.GDbread1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("duck1"), gdjs.duckpondCode.GDduck1Objects1);
-{for(var i = 0, len = gdjs.duckpondCode.GDduck1Objects1.length ;i < len;++i) {
-    gdjs.duckpondCode.GDduck1Objects1[i].getBehavior("BoidsMovement").MoveToObject(gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects, 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "duckpond", false);
 }}
 
 }
@@ -47,68 +31,20 @@ gdjs.copyArray(runtimeScene.getObjects("duck1"), gdjs.duckpondCode.GDduck1Object
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("bread1"), gdjs.duckpondCode.GDbread1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("duck1"), gdjs.duckpondCode.GDduck1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("gotoshop"), gdjs.homepageCode.GDgotoshopObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.turnedTowardTest(gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDduck1Objects1Objects, gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects, 90, false);
+for (var i = 0, k = 0, l = gdjs.homepageCode.GDgotoshopObjects1.length;i<l;++i) {
+    if ( gdjs.homepageCode.GDgotoshopObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.homepageCode.GDgotoshopObjects1[k] = gdjs.homepageCode.GDgotoshopObjects1[i];
+        ++k;
+    }
+}
+gdjs.homepageCode.GDgotoshopObjects1.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.duckpondCode.GDduck1Objects1 */
-{for(var i = 0, len = gdjs.duckpondCode.GDduck1Objects1.length ;i < len;++i) {
-    gdjs.duckpondCode.GDduck1Objects1[i].getBehavior("Animation").setAnimationName("faceright");
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("bread1"), gdjs.duckpondCode.GDbread1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("duck1"), gdjs.duckpondCode.GDduck1Objects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.turnedTowardTest(gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDduck1Objects1Objects, gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects, 90, true);
-if (isConditionTrue_0) {
-/* Reuse gdjs.duckpondCode.GDduck1Objects1 */
-{for(var i = 0, len = gdjs.duckpondCode.GDduck1Objects1.length ;i < len;++i) {
-    gdjs.duckpondCode.GDduck1Objects1[i].getBehavior("Animation").setAnimationName("faceleft");
-}
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-if (isConditionTrue_0) {
-gdjs.duckpondCode.GDbread1Objects1.length = 0;
-
-{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects, gdjs.evtTools.input.getCursorX(runtimeScene, "", 0), gdjs.evtTools.input.getCursorY(runtimeScene, "", 0), "");
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("bread1"), gdjs.duckpondCode.GDbread1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("duck1"), gdjs.duckpondCode.GDduck1Objects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDduck1Objects1Objects, gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-/* Reuse gdjs.duckpondCode.GDbread1Objects1 */
-{for(var i = 0, len = gdjs.duckpondCode.GDbread1Objects1.length ;i < len;++i) {
-    gdjs.duckpondCode.GDbread1Objects1[i].deleteFromScene(runtimeScene);
-}
+{gdjs.evtTools.window.openURL("https://denzilroos.github.io/duckypondandshop/shop", runtimeScene);
 }}
 
 }
@@ -116,27 +52,23 @@ if (isConditionTrue_0) {
 
 };
 
-gdjs.duckpondCode.func = function(runtimeScene) {
+gdjs.homepageCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.duckpondCode.GDduck1Objects1.length = 0;
-gdjs.duckpondCode.GDduck1Objects2.length = 0;
-gdjs.duckpondCode.GDbread1Objects1.length = 0;
-gdjs.duckpondCode.GDbread1Objects2.length = 0;
-gdjs.duckpondCode.GDduckangleObjects1.length = 0;
-gdjs.duckpondCode.GDduckangleObjects2.length = 0;
+gdjs.homepageCode.GDgotopondObjects1.length = 0;
+gdjs.homepageCode.GDgotopondObjects2.length = 0;
+gdjs.homepageCode.GDgotoshopObjects1.length = 0;
+gdjs.homepageCode.GDgotoshopObjects2.length = 0;
 
-gdjs.duckpondCode.eventsList0(runtimeScene);
-gdjs.duckpondCode.GDduck1Objects1.length = 0;
-gdjs.duckpondCode.GDduck1Objects2.length = 0;
-gdjs.duckpondCode.GDbread1Objects1.length = 0;
-gdjs.duckpondCode.GDbread1Objects2.length = 0;
-gdjs.duckpondCode.GDduckangleObjects1.length = 0;
-gdjs.duckpondCode.GDduckangleObjects2.length = 0;
+gdjs.homepageCode.eventsList0(runtimeScene);
+gdjs.homepageCode.GDgotopondObjects1.length = 0;
+gdjs.homepageCode.GDgotopondObjects2.length = 0;
+gdjs.homepageCode.GDgotoshopObjects1.length = 0;
+gdjs.homepageCode.GDgotoshopObjects2.length = 0;
 
 
 return;
 
 }
 
-gdjs['duckpondCode'] = gdjs.duckpondCode;
+gdjs['homepageCode'] = gdjs.homepageCode;
