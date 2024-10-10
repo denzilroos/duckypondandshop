@@ -4,6 +4,8 @@ gdjs.homepageCode.GDgotopondObjects1= [];
 gdjs.homepageCode.GDgotopondObjects2= [];
 gdjs.homepageCode.GDgotoshopObjects1= [];
 gdjs.homepageCode.GDgotoshopObjects2= [];
+gdjs.homepageCode.GDNewSpriteObjects1= [];
+gdjs.homepageCode.GDNewSpriteObjects2= [];
 
 
 gdjs.homepageCode.eventsList0 = function(runtimeScene) {
@@ -50,6 +52,28 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.homepageCode.GDNewSpriteObjects1);
+gdjs.copyArray(runtimeScene.getObjects("gotopond"), gdjs.homepageCode.GDgotopondObjects1);
+gdjs.copyArray(runtimeScene.getObjects("gotoshop"), gdjs.homepageCode.GDgotoshopObjects1);
+{for(var i = 0, len = gdjs.homepageCode.GDgotopondObjects1.length ;i < len;++i) {
+    gdjs.homepageCode.GDgotopondObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
+}
+}{for(var i = 0, len = gdjs.homepageCode.GDgotoshopObjects1.length ;i < len;++i) {
+    gdjs.homepageCode.GDgotoshopObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
+}
+}{for(var i = 0, len = gdjs.homepageCode.GDNewSpriteObjects1.length ;i < len;++i) {
+    gdjs.homepageCode.GDNewSpriteObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
+}
+}}
+
+}
+
+
 };
 
 gdjs.homepageCode.func = function(runtimeScene) {
@@ -59,12 +83,16 @@ gdjs.homepageCode.GDgotopondObjects1.length = 0;
 gdjs.homepageCode.GDgotopondObjects2.length = 0;
 gdjs.homepageCode.GDgotoshopObjects1.length = 0;
 gdjs.homepageCode.GDgotoshopObjects2.length = 0;
+gdjs.homepageCode.GDNewSpriteObjects1.length = 0;
+gdjs.homepageCode.GDNewSpriteObjects2.length = 0;
 
 gdjs.homepageCode.eventsList0(runtimeScene);
 gdjs.homepageCode.GDgotopondObjects1.length = 0;
 gdjs.homepageCode.GDgotopondObjects2.length = 0;
 gdjs.homepageCode.GDgotoshopObjects1.length = 0;
 gdjs.homepageCode.GDgotoshopObjects2.length = 0;
+gdjs.homepageCode.GDNewSpriteObjects1.length = 0;
+gdjs.homepageCode.GDNewSpriteObjects2.length = 0;
 
 
 return;
