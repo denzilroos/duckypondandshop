@@ -44,7 +44,7 @@ for (var i = 0, k = 0, l = gdjs.homepageCode.GDgotoshopObjects1.length;i<l;++i) 
 }
 gdjs.homepageCode.GDgotoshopObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.window.openURL("https://denzilroos.github.io/duckypondandshop/shop", runtimeScene);
+{gdjs.evtTools.window.openURL("https://denzilroos.github.io/duckypondandshop/shop.html", runtimeScene);
 }}
 
 }
