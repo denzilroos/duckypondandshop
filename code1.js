@@ -4,6 +4,8 @@ gdjs.duckpondCode.GDduck1Objects1= [];
 gdjs.duckpondCode.GDduck1Objects2= [];
 gdjs.duckpondCode.GDbread1Objects1= [];
 gdjs.duckpondCode.GDbread1Objects2= [];
+gdjs.duckpondCode.GDhomepageObjects1= [];
+gdjs.duckpondCode.GDhomepageObjects2= [];
 
 
 gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects = Hashtable.newFrom({"bread1": gdjs.duckpondCode.GDbread1Objects1});
@@ -112,6 +114,41 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("homepage"), gdjs.duckpondCode.GDhomepageObjects1);
+{for(var i = 0, len = gdjs.duckpondCode.GDhomepageObjects1.length ;i < len;++i) {
+    gdjs.duckpondCode.GDhomepageObjects1[i].setX(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("homepage"), gdjs.duckpondCode.GDhomepageObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.duckpondCode.GDhomepageObjects1.length;i<l;++i) {
+    if ( gdjs.duckpondCode.GDhomepageObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.duckpondCode.GDhomepageObjects1[k] = gdjs.duckpondCode.GDhomepageObjects1[i];
+        ++k;
+    }
+}
+gdjs.duckpondCode.GDhomepageObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "homepage", false);
+}}
+
+}
+
+
 };
 
 gdjs.duckpondCode.func = function(runtimeScene) {
@@ -121,12 +158,16 @@ gdjs.duckpondCode.GDduck1Objects1.length = 0;
 gdjs.duckpondCode.GDduck1Objects2.length = 0;
 gdjs.duckpondCode.GDbread1Objects1.length = 0;
 gdjs.duckpondCode.GDbread1Objects2.length = 0;
+gdjs.duckpondCode.GDhomepageObjects1.length = 0;
+gdjs.duckpondCode.GDhomepageObjects2.length = 0;
 
 gdjs.duckpondCode.eventsList0(runtimeScene);
 gdjs.duckpondCode.GDduck1Objects1.length = 0;
 gdjs.duckpondCode.GDduck1Objects2.length = 0;
 gdjs.duckpondCode.GDbread1Objects1.length = 0;
 gdjs.duckpondCode.GDbread1Objects2.length = 0;
+gdjs.duckpondCode.GDhomepageObjects1.length = 0;
+gdjs.duckpondCode.GDhomepageObjects2.length = 0;
 
 
 return;
