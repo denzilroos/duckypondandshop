@@ -22,8 +22,6 @@ gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects = Has
 gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects = Hashtable.newFrom({"bread1": gdjs.duckpondCode.GDbread1Objects1});
 gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDduck1Objects1Objects = Hashtable.newFrom({"duck1": gdjs.duckpondCode.GDduck1Objects1});
 gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects = Hashtable.newFrom({"bread1": gdjs.duckpondCode.GDbread1Objects1});
-gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects = Hashtable.newFrom({"bread1": gdjs.duckpondCode.GDbread1Objects1});
-gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDsky1Objects1Objects = Hashtable.newFrom({"sky1": gdjs.duckpondCode.GDsky1Objects1});
 gdjs.duckpondCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -174,7 +172,7 @@ gdjs.copyArray(runtimeScene.getObjects("duck1"), gdjs.duckpondCode.GDduck1Object
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.duckpondCode.GDduck1Objects1.length;i<l;++i) {
-    if ( gdjs.duckpondCode.GDduck1Objects1[i].getY() < 200 ) {
+    if ( gdjs.duckpondCode.GDduck1Objects1[i].getY() < 220 ) {
         isConditionTrue_0 = true;
         gdjs.duckpondCode.GDduck1Objects1[k] = gdjs.duckpondCode.GDduck1Objects1[i];
         ++k;
@@ -184,7 +182,7 @@ gdjs.duckpondCode.GDduck1Objects1.length = k;
 if (isConditionTrue_0) {
 /* Reuse gdjs.duckpondCode.GDduck1Objects1 */
 {for(var i = 0, len = gdjs.duckpondCode.GDduck1Objects1.length ;i < len;++i) {
-    gdjs.duckpondCode.GDduck1Objects1[i].setY(200);
+    gdjs.duckpondCode.GDduck1Objects1[i].setY(220);
 }
 }}
 
@@ -198,7 +196,7 @@ gdjs.copyArray(runtimeScene.getObjects("duck1"), gdjs.duckpondCode.GDduck1Object
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.duckpondCode.GDduck1Objects1.length;i<l;++i) {
-    if ( gdjs.duckpondCode.GDduck1Objects1[i].getY() > 700 ) {
+    if ( gdjs.duckpondCode.GDduck1Objects1[i].getY() > 600 ) {
         isConditionTrue_0 = true;
         gdjs.duckpondCode.GDduck1Objects1[k] = gdjs.duckpondCode.GDduck1Objects1[i];
         ++k;
@@ -208,7 +206,7 @@ gdjs.duckpondCode.GDduck1Objects1.length = k;
 if (isConditionTrue_0) {
 /* Reuse gdjs.duckpondCode.GDduck1Objects1 */
 {for(var i = 0, len = gdjs.duckpondCode.GDduck1Objects1.length ;i < len;++i) {
-    gdjs.duckpondCode.GDduck1Objects1[i].setY(700);
+    gdjs.duckpondCode.GDduck1Objects1[i].setY(600);
 }
 }}
 
@@ -218,16 +216,48 @@ if (isConditionTrue_0) {
 {
 
 gdjs.copyArray(runtimeScene.getObjects("bread1"), gdjs.duckpondCode.GDbread1Objects1);
-gdjs.copyArray(runtimeScene.getObjects("sky1"), gdjs.duckpondCode.GDsky1Objects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDbread1Objects1Objects, gdjs.duckpondCode.mapOfGDgdjs_9546duckpondCode_9546GDsky1Objects1Objects, false, runtimeScene, false);
+for (var i = 0, k = 0, l = gdjs.duckpondCode.GDbread1Objects1.length;i<l;++i) {
+    if ( gdjs.duckpondCode.GDbread1Objects1[i].getY() < 200 ) {
+        isConditionTrue_0 = true;
+        gdjs.duckpondCode.GDbread1Objects1[k] = gdjs.duckpondCode.GDbread1Objects1[i];
+        ++k;
+    }
+}
+gdjs.duckpondCode.GDbread1Objects1.length = k;
 if (isConditionTrue_0) {
 /* Reuse gdjs.duckpondCode.GDbread1Objects1 */
 {for(var i = 0, len = gdjs.duckpondCode.GDbread1Objects1.length ;i < len;++i) {
     gdjs.duckpondCode.GDbread1Objects1[i].deleteFromScene(runtimeScene);
 }
+}{runtimeScene.getScene().getVariables().getFromIndex(0).setBoolean(false);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("bread1"), gdjs.duckpondCode.GDbread1Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.duckpondCode.GDbread1Objects1.length;i<l;++i) {
+    if ( gdjs.duckpondCode.GDbread1Objects1[i].getY() > 600 ) {
+        isConditionTrue_0 = true;
+        gdjs.duckpondCode.GDbread1Objects1[k] = gdjs.duckpondCode.GDbread1Objects1[i];
+        ++k;
+    }
+}
+gdjs.duckpondCode.GDbread1Objects1.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.duckpondCode.GDbread1Objects1 */
+{for(var i = 0, len = gdjs.duckpondCode.GDbread1Objects1.length ;i < len;++i) {
+    gdjs.duckpondCode.GDbread1Objects1[i].deleteFromScene(runtimeScene);
+}
+}{runtimeScene.getScene().getVariables().getFromIndex(0).setBoolean(false);
 }}
 
 }
